@@ -9,78 +9,85 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       color: white;
       background: url("cairn-bg.png") no-repeat center center fixed;
       background-size: cover;
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.58);
+      background: rgba(0, 0, 0, 0.62);
       min-height: 100vh;
       display: flex;
       align-items: center;
     }
 
     .container {
-      max-width: 720px;
+      max-width: 680px;
       padding: 60px 40px;
       text-align: right;
       margin-left: auto;
-      margin-right: 8%;
-      transform: translateY(-6%);
+      margin-right: 10%;
+      transform: translateY(-4%);
     }
 
     h1 {
-      font-size: 48px;
-      line-height: 1.05;
-      letter-spacing: -1px;
-      margin-bottom: 12px;
-      font-weight: 700;
+      font-size: 44px;
+      line-height: 1.1;
+      letter-spacing: -0.8px;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
 
     .location {
-      font-size: 14px;
-      letter-spacing: 2px;
+      font-size: 13px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #d0d0d0;
-      margin-bottom: 32px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 28px;
     }
 
     .tagline {
       font-size: 20px;
-      line-height: 1.45;
-      margin-bottom: 20px;
+      line-height: 1.5;
+      margin-bottom: 18px;
       font-weight: 500;
+      max-width: 620px;
+      margin-left: auto;
     }
 
     .subtext {
       font-size: 15px;
       line-height: 1.6;
-      color: #d8d8d8;
-      margin-bottom: 36px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 34px;
+      max-width: 600px;
+      margin-left: auto;
     }
 
     .divider {
-      width: 60px;
-      height: 2px;
-      background: white;
-      margin: 30px 0 30px auto;
+      width: 50px;
+      height: 1px;
+      background: rgba(255,255,255,0.6);
+      margin: 28px 0 28px auto;
     }
 
     a {
-      color: #e5e5e5;
+      color: rgba(255,255,255,0.85);
       text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.4);
+      border-bottom: 1px solid rgba(255,255,255,0.35);
+      padding-bottom: 1px;
     }
 
     a:hover {
-      opacity: 0.8;
+      opacity: 0.7;
     }
 
     footer {
-      margin-top: 50px;
-      font-size: 12px;
-      color: rgba(255,255,255,0.5);
+      margin-top: 40px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.45);
     }
 
     @media (max-width: 800px) {
@@ -92,11 +99,17 @@
       }
 
       h1 {
-        font-size: 38px;
+        font-size: 34px;
+      }
+
+      .tagline,
+      .subtext {
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .divider {
-        margin: 30px auto;
+        margin: 28px auto;
       }
     }
   </style>
