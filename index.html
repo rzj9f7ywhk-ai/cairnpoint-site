@@ -3,90 +3,97 @@
 <head>
   <title>CairnPoint Holdings Inc.</title>
   <style>
-    body {
-      margin: 0;
-      font-family: "Georgia", serif;
-      background: #f8f8f8;
-      color: #111;
-    }
+  body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    color: white;
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
+    background: url("https://images.unsplash.com/photo-1523419409543-5a7cfae82c2b") no-repeat center center fixed;
+    background-size: cover;
+  }
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .location {
-      font-size: 18px;
-      color: #666;
-      margin-bottom: 40px;
-    }
+  .container {
+    max-width: 800px;
+    padding: 60px 20px;
+    text-align: center;
+  }
 
-    .tagline {
-      font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
+  h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
 
-    .subtext {
-      font-size: 16px;
-      color: #444;
-      margin-bottom: 50px;
-    }
+  .location {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
 
-    .divider {
-      width: 60px;
-      height: 2px;
-      background: #000;
-      margin: 40px auto;
-    }
+  .tagline {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
 
-    a {
-      text-decoration: none;
-      color: #000;
-      border-bottom: 1px solid #000;
-    }
+  .subtext {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 50px;
+  }
 
-    a:hover {
-      opacity: 0.7;
-    }
+  .divider {
+    width: 60px;
+    height: 2px;
+    background: white;
+    margin: 40px auto;
+  }
 
-    footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+  }
+
+  footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #bbb;
+  }
+ </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="overlay">
+    <div class="container">
 
-    <h1>CairnPoint Holdings Inc.</h1>
-    <div class="location">Calgary, Alberta</div>
+      <h1>CairnPoint Holdings Inc.</h1>
+      <div class="location">Calgary, Alberta</div>
 
-    <div class="tagline">
-      A privately held company focused on long-term value creation.
+      <div class="tagline">
+        A privately held company focused on long-term value creation.
+      </div>
+
+      <div class="subtext">
+        Operating through a portfolio of subsidiary businesses and strategic investments.
+      </div>
+
+      <div class="divider"></div>
+
+      <p>Contact: <a href="mailto:info@cairnpoint.ca">info@cairnpoint.ca</a></p>
+
+      <footer>
+        © CairnPoint Holdings Inc.
+      </footer>
+
     </div>
-
-    <div class="subtext">
-      Operating through a portfolio of subsidiary businesses and strategic investments.
-    </div>
-
-    <div class="divider"></div>
-
-    <p>Contact: <a href="mailto:info@cairnpoint.ca">info@cairnpoint.ca</a></p>
-
-    <footer>
-      © CairnPoint Holdings Inc.
-    </footer>
-
   </div>
 </body>
 </html>
