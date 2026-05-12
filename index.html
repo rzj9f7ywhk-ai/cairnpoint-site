@@ -16,82 +16,90 @@
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.62);
+      background: rgba(0, 0, 0, 0.50);
       min-height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .container {
-      max-width: 900px;
-      padding: 60px 40px;
-      text-align: right;
+      width: 58%;
+      max-width: 920px;
       margin-left: auto;
-      margin-right: 6%;
-      transform: translateY(-10%);
-      text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+      margin-right: 5.5%;
+      padding-top: 18vh;
+      text-align: right;
+      text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
     }
 
     h1 {
-      font-size: 44px;
-      line-height: 1.1;
-      letter-spacing: -0.8px;
-      margin-bottom: 10px;
+      font-size: 52px;
+      line-height: 1.05;
+      letter-spacing: -1px;
+      margin: 0 0 18px 0;
       font-weight: 600;
       white-space: nowrap;
     }
 
     .location {
-      font-size: 13px;
-      letter-spacing: 2.5px;
+      font-size: 14px;
+      letter-spacing: 5px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.72);
-      margin-bottom: 30px;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 52px;
       white-space: nowrap;
     }
 
     .tagline {
       font-size: 20px;
-      line-height: 1.5;
-      margin-bottom: 18px;
+      line-height: 1.4;
       font-weight: 500;
+      margin-bottom: 34px;
       white-space: nowrap;
     }
 
     .subtext {
       font-size: 15px;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.76);
-      margin-bottom: 34px;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 70px;
       white-space: nowrap;
     }
 
     .divider {
-      width: 50px;
+      width: 66px;
       height: 1px;
-      background: rgba(255,255,255,0.6);
-      margin: 28px 0 28px auto;
+      background: rgba(255,255,255,0.72);
+      margin: 0 0 44px auto;
+    }
+
+    .contact {
+      font-size: 17px;
+      margin-bottom: 48px;
     }
 
     a {
-      color: rgba(255,255,255,0.86);
+      color: rgba(255,255,255,0.9);
       text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.35);
-      padding-bottom: 1px;
+      border-bottom: 1px solid rgba(255,255,255,0.45);
+      padding-bottom: 2px;
     }
 
     footer {
-      margin-top: 40px;
-      font-size: 11px;
-      color: rgba(255,255,255,0.45);
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
     }
 
     @media (max-width: 900px) {
+      .overlay {
+        align-items: center;
+      }
+
       .container {
+        width: auto;
         margin: 0 auto;
-        text-align: center;
         padding: 40px 24px;
-        transform: none;
+        text-align: center;
       }
 
       h1 {
@@ -99,13 +107,14 @@
         white-space: normal;
       }
 
+      .location,
       .tagline,
       .subtext {
         white-space: normal;
       }
 
       .divider {
-        margin: 28px auto;
+        margin: 28px auto 36px auto;
       }
     }
   </style>
@@ -128,7 +137,7 @@
 
       <div class="divider"></div>
 
-      <p>Contact: <a href="mailto:info@cairnpoint.ca">info@cairnpoint.ca</a></p>
+      <p class="contact">Contact: <a href="mailto:info@cairnpoint.ca">info@cairnpoint.ca</a></p>
 
       <footer>
         © CairnPoint Holdings Inc.
