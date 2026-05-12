@@ -10,7 +10,6 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       color: white;
       background: url("cairn-bg.png") no-repeat center center fixed;
       background-size: cover;
@@ -24,29 +23,31 @@
     }
 
     .container {
-  max-width: 620px;
-  padding: 60px 40px;
-  text-align: right;
-  margin-left: auto;
-  margin-right: 6%;
-  transform: translateY(-10%);
-}
+      max-width: 900px;
+      padding: 60px 40px;
+      text-align: right;
+      margin-left: auto;
+      margin-right: 6%;
+      transform: translateY(-10%);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    }
+
     h1 {
       font-size: 44px;
       line-height: 1.1;
       letter-spacing: -0.8px;
       margin-bottom: 10px;
       font-weight: 600;
-      max-width: 580px;
-      margin-left: auto;
-}
+      white-space: nowrap;
+    }
 
     .location {
       font-size: 13px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 28px;
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 30px;
+      white-space: nowrap;
     }
 
     .tagline {
@@ -54,17 +55,15 @@
       line-height: 1.5;
       margin-bottom: 18px;
       font-weight: 500;
-      max-width: 620px;
-      margin-left: auto;
+      white-space: nowrap;
     }
 
     .subtext {
       font-size: 15px;
       line-height: 1.6;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255,255,255,0.76);
       margin-bottom: 34px;
-      max-width: 540px;
-      margin-left: auto;
+      white-space: nowrap;
     }
 
     .divider {
@@ -75,14 +74,10 @@
     }
 
     a {
-      color: rgba(255,255,255,0.85);
+      color: rgba(255,255,255,0.86);
       text-decoration: none;
       border-bottom: 1px solid rgba(255,255,255,0.35);
       padding-bottom: 1px;
-    }
-
-    a:hover {
-      opacity: 0.7;
     }
 
     footer {
@@ -91,7 +86,7 @@
       color: rgba(255,255,255,0.45);
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       .container {
         margin: 0 auto;
         text-align: center;
@@ -101,12 +96,12 @@
 
       h1 {
         font-size: 34px;
+        white-space: normal;
       }
 
       .tagline,
       .subtext {
-        margin-left: auto;
-        margin-right: auto;
+        white-space: normal;
       }
 
       .divider {
@@ -119,16 +114,13 @@
 <body>
   <div class="overlay">
     <main class="container">
-      <h1>
-  CairnPoint Holdings Inc.
-</h1>
+      <h1>CairnPoint Holdings Inc.</h1>
 
       <div class="location">Calgary, Alberta</div>
 
       <div class="tagline">
-  A privately held Canadian company<br>
-  focused on building long-term value.
-</div>
+        A privately held Canadian company focused on building long-term value.
+      </div>
 
       <div class="subtext">
         Operating through a disciplined portfolio of businesses, investments, and strategic opportunities.
